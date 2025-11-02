@@ -1,70 +1,274 @@
-# Getting Started with Create React App
+# 💰 Cryptocurrency Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Nama:** [HANIFAH HASANAH]  
+**NIM:** 123140082  
+**Mata Kuliah:** Pengembangan Aplikasi Web  
+**Dosen:** [Muhammad Habib Algifari, S.Kom., M.TI.]  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Deskripsi Project
 
-### `npm start`
+Cryptocurrency Tracker adalah aplikasi web untuk tracking harga cryptocurrency secara real-time dengan fitur compare dan portfolio calculator. Aplikasi ini dibangun menggunakan ReactJS dan mengintegrasikan CoinGecko API untuk mendapatkan data cryptocurrency terkini.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Fitur Utama
 
-### `npm test`
+1. **Tabel List Cryptocurrency**
+   - Menampilkan 100 cryptocurrency teratas
+   - Informasi: Rank, Name, Price, Market Cap, 24h Change
+   - Sortable columns (klik header untuk sort)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Filter Berdasarkan Range Harga**
+   - Input minimum dan maximum price
+   - Filter real-time
+   - Reset filter
 
-### `npm run build`
+3. **Detail Cryptocurrency dengan Chart**
+   - Chart harga 7 hari terakhir
+   - Menggunakan library Recharts
+   - Interactive tooltip
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Portfolio Calculator**
+   - Input jumlah coin yang dimiliki
+   - Menampilkan total value dalam USD
+   - Real-time calculation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Refresh Data Button**
+   - Update data terbaru dari API
+   - Loading indicator
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Framework:** ReactJS (Create React App)
+- **Styling:** CSS3 (Pure CSS)
+- **Chart Library:** Recharts
+- **API:** CoinGecko API
+- **Deployment:** Vercel
+- **Version Control:** Git & GitHub
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Cara Instalasi
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Prerequisites
+- Node.js (v14 atau lebih baru)
+- npm atau yarn
+- Git
 
-## Learn More
+### Langkah Instalasi
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone repository**
+```bash
+   git clone https://github.com/HANIFAHHASANAH-123140082/uts-pemweb-123140082.git
+   cd uts-pemweb-123140082
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Install dependencies**
+```bash
+   npm install
+```
 
-### Code Splitting
+3. **Jalankan aplikasi**
+```bash
+   npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Buka browser**
+```
+   http://localhost:3000
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Link Deployment
 
-### Making a Progressive Web App
+🔗 **Live Demo:** [https://uts-pemweb-123140082.vercel.app/]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Screenshot
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 1. Homepage
+![Homepage](./screenshots/homepage.png)
 
-### Deployment
+### 2. Cryptocurrency Table
+![Table](./screenshots/table.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 3. Detail Modal with Chart
+![Detail](./screenshots/detail.png)
 
-### `npm run build` fails to minify
+### 4. Portfolio Calculator
+![Calculator](./screenshots/calculator.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 5. Mobile Responsive
+![Mobile](./screenshots/mobile.png)
+
+---
+
+## Struktur Project
+```
+uts-pemweb-123140082/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── SearchForm.jsx
+│   │   ├── DataTable.jsx
+│   │   └── DetailCard.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   └── index.js
+├── screenshots/
+│   ├── homepage.png
+│   ├── table.png
+│   ├── detail.png
+│   ├── calculator.png
+│   └── mobile.png
+├── package.json
+└── README.md
+```
+
+---
+
+## Fitur yang Diimplementasikan
+
+### CPMK0501: Tabel, Form, CSS (45%)
+- ✅ Form dengan 2 input (min/max price) + validation HTML5
+- ✅ Tabel data dinamis dengan 6 kolom dari API
+- ✅ CSS dengan multiple selectors, pseudo-classes
+- ✅ Responsive design dengan media queries
+- ✅ Flexbox dan CSS Grid
+
+### CPMK0502: HTML, JavaScript, ReactJS (55%)
+- ✅ HTML5 structure dengan semantic tags
+- ✅ Arrow functions, template literals, destructuring
+- ✅ Async/await untuk API calls
+- ✅ Array methods (map, filter, sort)
+- ✅ Functional components React
+- ✅ useState dan useEffect hooks
+- ✅ Props passing antar component
+- ✅ Conditional rendering
+- ✅ Event handling
+- ✅ 4+ components (Header, SearchForm, DataTable, DetailCard)
+- ✅ Fetch data dari API dengan error handling
+
+### BONUS: Deployment dan Documentation (10%)
+- ✅ GitHub repository public
+- ✅ Struktur folder terorganisir
+- ✅ 10+ commits dengan message jelas
+- ✅ README lengkap dengan dokumentasi
+- ✅ Screenshot aplikasi
+- ✅ Deploy ke Vercel berhasil
+
+---
+
+## Fitur Teknis
+
+### Modern JavaScript
+```javascript
+// Arrow Functions
+const fetchData = async () => { ... }
+
+// Template Literals
+`https://api.coingecko.com/api/v3/coins/${id}`
+
+// Destructuring
+const { name, current_price } = coin
+
+// Spread Operator
+const sorted = [...cryptocurrencies].sort()
+
+// Array Methods
+const filtered = data.filter(crypto => crypto.price > min)
+```
+
+### React Hooks
+```javascript
+// useState
+const [data, setData] = useState([])
+
+// useEffect
+useEffect(() => {
+  fetchData()
+}, [dependency])
+```
+
+### API Integration
+- Fetch dari CoinGecko API
+- Loading state management
+- Error handling dengan try-catch
+- Data transformation
+
+---
+
+## Styling Features
+
+- **Gradient Background:** Linear gradient untuk background
+- **Box Shadow:** Depth dengan shadow effects
+- **Hover Effects:** Interactive hover states
+- **Transitions:** Smooth animations
+- **Responsive Grid:** Auto-fit grid layout
+- **Modal Overlay:** Full-screen modal dengan backdrop
+- **Flexbox:** Modern layout system
+- **Media Queries:** Breakpoints untuk mobile & tablet
+
+---
+
+## Responsive Design
+
+Aplikasi fully responsive dengan breakpoints:
+- Desktop: 1400px+
+- Tablet: 768px - 1399px
+- Mobile: < 768px
+
+---
+
+## Error Handling
+
+- API request error handling
+- Loading states
+- Empty state handling
+- Form validation
+- Console error-free
+
+---
+
+## API Endpoints Used
+
+1. **Get Market Data**
+```
+   GET /coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100
+```
+
+2. **Get Chart Data**
+```
+   GET /coins/{id}/market_chart?vs_currency=usd&days=7
+```
+
+---
+
+## Credits
+
+- **API Provider:** [CoinGecko](https://www.coingecko.com/)
+- **Chart Library:** [Recharts](https://recharts.org/)
+- **Deployment:** [Vercel](https://vercel.com/)
+- **Icons:** Unicode Emoji
+
+---
+
+## License
+
+© 2025 - UTS Pengembangan Aplikasi Web
+
+---
+
+## Author
+
+Dibuat oleh **[HANIFAH HASANAH]**  
+NIM: 123140082  
+INSTITUT TEKNOLOGI SUMATERA
